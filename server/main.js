@@ -73,21 +73,21 @@ app.post('/api/users', (req, res) => {
   })
 });
 
-// returns all users
-app.get('/api/users', (req,res) => {
-  db.select('*').from('users')
-    .then((data) => {
-      res.send(data)
-    })
-})
+// // returns all users
+// app.get('/api/users', (req,res) => {
+//   db.select('*').from('users')
+//     .then((data) => {
+//       res.send(data)
+//     })
+// })
 
 // returns array of all games a user has played
-app.get('/api/users/:name', (req,res) => {
-  db.select('*').from('users').where('name', req.params.name)
-    .then((data) => {
-      res.send(data)
-    })
-})
+// app.get('/api/users/:name', (req,res) => {
+//   db.select('*').from('users').where('name', req.params.name)
+//     .then((data) => {
+//       res.send(data)
+//     })
+// })
 
 // returns array of game objects
 app.get('/api/games', (req, res) => {

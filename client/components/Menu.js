@@ -3,7 +3,7 @@ import { Link, browserHistory } from 'react-router';
 
 import Create from './Create';
 import Join from './Join';
-import Graph from './Graph';
+// import Graph from './Graph';
 import PieChart from './PieChart';
 import Chatbox from './Chatbox.jsx';
 import * as db from '../models/menu';
@@ -38,7 +38,7 @@ export default class Menu extends React.Component{
     return (
       <div className="narrative container six columns offset-by-three">
         <h1>The Rock Shop</h1>
-        <Graph />
+        {/*<Graph />*/}
       {/*To fix: users log in to see their profiles*/}
         <hr />
         {
